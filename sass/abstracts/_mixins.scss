@@ -1,0 +1,14 @@
+
+@mixin respond($size) {
+    @if $size == phone {
+        @media (max-width: 600px) { @content }
+    };
+
+    @if $size == tab-port {
+        @media (max-width: 900px) { @content }
+    };
+
+    @if $size == tab-land {
+        @media (max-width: 1200px) { @content }
+    };
+}
