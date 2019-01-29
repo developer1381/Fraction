@@ -1,0 +1,35 @@
+.point {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    
+    &__icon {
+        color: $color-white;
+        font-size: 8rem;
+        transition: all .15s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__title {
+        color: $color-grey-light;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        transition: all .15s;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
+    &__text {
+        color: $color-grey-light;
+        font-size: 1.5rem;
+        transition: all .15s;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+}

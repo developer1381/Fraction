@@ -1,35 +1,51 @@
 .skill {
-    padding: 1rem 1.5rem;
-    text-align: center;
-    
-    &__icon {
-        color: $color-white;
-        font-size: 8rem;
-        transition: all .15s;
+    padding: 1rem 2rem;
+    position: relative;
 
-        &:hover {
-            color: $color-primary;
-        }
+    &:not(:last-child) {
+        margin-bottom: 4rem;
     }
 
     &__title {
-        color: $color-grey-light;
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
+        color: $color-white;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
         transition: all .15s;
-
+        
         &:hover {
-            color: $color-primary-light;
+            color: $color-primary-dark;
+            transform: rotate(2.5deg) scale(1.15);
         }
     }
 
-    &__text {
-        color: $color-grey-light;
-        font-size: 1.5rem;
-        transition: all .15s;
+    &__progress-container {
+        background-color: $color-grey-dark;
+        border-radius: 3px;
+        padding: 0.5rem;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        width: 50%;
+    }
 
-        &:hover {
-            color: $color-primary-light;
+    &__progress-main {
+        border-radius: 3px;
+        height: 10px;
+
+        &--html {
+            background-image: linear-gradient(to right, $color-primary 0%, $color-primary 85%, transparent 85%);
+        }
+
+        &--css {
+            background-image: linear-gradient(to right, $color-primary 0%, $color-primary 75%, transparent 75%);
+        }
+
+        &--js {
+            background-image: linear-gradient(to right, $color-primary 0%, $color-primary 65%, transparent 65%);
         }
     }
 }

@@ -1,0 +1,27 @@
+@keyframes heading-primary-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    75% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes container-animation {
+    0% {
+        opacity: 0;
+        transform: scale(0.25);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

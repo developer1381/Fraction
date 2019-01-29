@@ -1,8 +1,8 @@
 .hero {
     background-color: $color-primary;
     border-radius: 1.5px;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
-    margin-bottom: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    margin-bottom: 5rem;
     padding: 5rem 2.5rem 10rem 2.5rem;
 
     @include respond(phone) {
@@ -22,9 +22,10 @@
 
     &__image {
         border-radius: 50%;
+        filter: brightness(35%);
         height: 15rem;
         width: 15rem;
-        transition: all .15s;
+        transition: all .25s;
 
         &:hover {
             filter: brightness(50%);
